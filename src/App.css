@@ -116,6 +116,7 @@
 @media only screen and (max-width: 760px) {
   .App {
     font-size: 15px;
+    margin-left: 50px;
   }
   .day {
     padding: 8px;
