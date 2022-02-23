@@ -106,3 +106,25 @@
 .h1618 {
   grid-row: 19/24;
 }
+.info {
+  position: absolute;
+  margin: auto;
+  padding: 15px;
+  font-size: smaller;
+}
+
+@media only screen and (max-width: 760px) {
+  .App {
+    font-size: 15px;
+  }
+  .day {
+    padding: 8px;
+  }
+  .course {
+    padding: 8px;
+  }
+  .grid {
+    /* overflow-x: scroll; */
+    min-width: 500px;
+  }
+}

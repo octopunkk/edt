@@ -1,3 +1,5 @@
+import { Course } from "./Course";
+
 export function Grid(props) {
   let days = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"];
   let hours = ["8h00", "10h00", "12h00", "14h00", "16h00", "18h00"];
@@ -10,6 +12,7 @@ export function Grid(props) {
       type: "Théorie",
       time: "h1012",
       day: "lundi",
+      showInfo: "none",
     },
     {
       id: "INFOH503",
@@ -19,6 +22,7 @@ export function Grid(props) {
       type: "Travaux pratiques",
       time: "h1418",
       day: "lundi",
+      showInfo: "none",
     },
     {
       id: "INFOH509",
@@ -28,6 +32,7 @@ export function Grid(props) {
       type: "Travaux pratiques",
       time: "h0810",
       day: "mardi",
+      showInfo: "none",
     },
     {
       id: "INFOH503",
@@ -37,6 +42,7 @@ export function Grid(props) {
       type: "Théorie",
       time: "h1012",
       day: "mardi",
+      showInfo: "none",
     },
     {
       id: "INFOH509",
@@ -46,6 +52,7 @@ export function Grid(props) {
       type: "Théorie",
       time: "h1416",
       day: "mercredi",
+      showInfo: "none",
     },
     {
       id: "GESTS483",
@@ -55,24 +62,27 @@ export function Grid(props) {
       type: "Théorie",
       time: "h0810",
       day: "jeudi",
+      showInfo: "none",
     },
     {
       id: "PHYSF517",
-      name: "How To Make (almost) Any Experiment Using Digital Fabrication",
+      name: "How To Make (almost) Any Experiment...",
       location: "Fablab",
       teacher: "TERWAGNE Denis",
       type: "Théorie",
       time: "h10301230",
       day: "jeudi",
+      showInfo: "none",
     },
     {
       id: "PHYSF517",
-      name: "How To Make (almost) Any Experiment Using Digital Fabrication",
+      name: "How To Make (almost) Any Experiment...",
       location: "Fablab",
       teacher: "TERWAGNE Denis",
       type: "Travaux pratiques",
       time: "h13301530",
       day: "jeudi",
+      showInfo: "none",
     },
     {
       id: "INFOH512",
@@ -82,6 +92,7 @@ export function Grid(props) {
       type: "Théorie",
       time: "h13301530",
       day: "vendredi",
+      showInfo: "none",
     },
     {
       id: "INFOH410",
@@ -91,8 +102,14 @@ export function Grid(props) {
       type: "Travaux pratiques",
       time: "h1618",
       day: "vendredi",
+      showInfo: "content",
     },
   ];
+  // let toggleInfo = (showInfo) => {
+  //   showInfo === "content" ? showInfo === "none" : showInfo === "content";
+  //   return showInfo;
+  // };
+
   return (
     <div className="grid">
       {days.map((day) => (
@@ -102,15 +119,7 @@ export function Grid(props) {
         <div className={`h${hour} hour`}>{hour}</div>
       ))}
       {courses.map((course) => (
-        <div
-          className={`${course.time} ${course.type} ${course.day} course clay`}
-        >
-          <p className={`${course.type}name`}>{course.name}</p>
-          {course.id} <br />
-          {course.type} <br />
-          {course.teacher} <br />
-          {course.location}
-        </div>
+        <Course course={course} />
       ))}
     </div>
   );
