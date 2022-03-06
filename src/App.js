@@ -1,9 +1,6 @@
 import "./App.css";
 import { Grid } from "./Grid";
 
-// let API_key = "86600195581fa8929ed1e083375acef2";
-// let city_name = "paris";
-
 // let getCourses = async () => {
 //   const response = await fetch(
 //     `https://cloud.timeedit.net/be_ulb/web/public/ri166XQQ676Z50Qv7900QgZ6y6Y060Y97Y7.html`
