@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <Grid />
-      Mis à jour : dimanche 06/03
+      Mis à jour : lundi 07/03
     </div>
   );
 }
