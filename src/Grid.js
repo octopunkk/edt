@@ -7,8 +7,8 @@ export function Grid(props) {
     {
       id: "INFOH410",
       name: "Techniques of artificial intelligence",
-      // location: "S.UB4.132",
-      location: "distanciel",
+      location: "S.UB4.132",
+      // location: "distanciel",
       teacher: "BERSINI Hugues",
       type: "Théorie",
       time: "h1012",
@@ -18,23 +18,24 @@ export function Grid(props) {
     {
       id: "INFOH503",
       name: "GPU/FPGA parallel programming",
-      location: "S.L3.217",
+      // location: "S.L3.217",
+      location: "distanciel",
       teacher: "LAFRUIT Gauthier",
       type: "Travaux pratiques",
       time: "h1418",
       day: "lundi",
       showInfo: "none",
     },
-    {
-      id: "INFOH509",
-      name: "Web Technologies",
-      location: "Distanciel",
-      teacher: "SAKR Mahmoud",
-      type: "Travaux pratiques",
-      time: "h0810",
-      day: "mardi",
-      showInfo: "none",
-    },
+    // {
+    //   id: "INFOH509",
+    //   name: "Web Technologies",
+    //   location: "Distanciel",
+    //   teacher: "SAKR Mahmoud",
+    //   type: "Travaux pratiques",
+    //   time: "h0810",
+    //   day: "mardi",
+    //   showInfo: "none",
+    // },
     // {
     //   id: "INFOH503",
     //   name: "GPU/FPGA parallel programming",
@@ -45,16 +46,16 @@ export function Grid(props) {
     //   day: "mardi",
     //   showInfo: "none",
     // },
-    // {
-    //   id: "INFOH509",
-    //   name: "Web Technologies",
-    //   location: "S.R42.4.502 - Auditoire Paul HATRY",
-    //   teacher: "SAKR Mahmoud",
-    //   type: "Théorie",
-    //   time: "h1416",
-    //   day: "mercredi",
-    //   showInfo: "none",
-    // },
+    {
+      id: "INFOH509",
+      name: "Web Technologies",
+      location: "S.R42.4.502 - Auditoire Paul HATRY",
+      teacher: "SAKR Mahmoud",
+      type: "Théorie",
+      time: "h1416",
+      day: "mercredi",
+      showInfo: "none",
+    },
     {
       id: "GESTS483",
       name: "Digital and IT Governance",
@@ -106,10 +107,6 @@ export function Grid(props) {
       showInfo: "content",
     },
   ];
-  // let toggleInfo = (showInfo) => {
-  //   showInfo === "content" ? showInfo === "none" : showInfo === "content";
-  //   return showInfo;
-  // };
 
   return (
     <div className="grid">
