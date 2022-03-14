@@ -54,8 +54,6 @@ export function Weather(props) {
         return "wi-fog";
       case "Sand":
         return "wi-sandstorm";
-      case "Dust":
-        return "wi-dust";
       case "Ash":
         return "wi-volcano";
       case "Squall":
@@ -78,6 +76,8 @@ export function Weather(props) {
           return "wi-cloudy";
         }
         break;
+      default:
+        return "wi-day-sunny";
     }
   };
   return (
