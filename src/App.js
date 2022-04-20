@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Grid />
       <Weather />
-      Mis à jour : dimanche 27/03 <br />
+      Mis à jour : mercredi 20/04 <br />
     </div>
   );
 }
