@@ -4,17 +4,17 @@ export function Grid(props) {
   let days = ["lundi", "mardi", "mercredi", "jeudi", "vendredi"];
   let hours = ["8h00", "10h00", "12h00", "14h00", "16h00", "18h00"];
   let courses = [
-    // {
-    //   id: "INFOH410",
-    //   name: "Techniques of artificial intelligence",
-    //   location: "S.UB4.132",
-    //   // location: "distanciel",
-    //   teacher: "BERSINI Hugues",
-    //   type: "Théorie",
-    //   time: "h1012",
-    //   day: "lundi",
-    //   showInfo: "none",
-    // },
+    {
+      id: "INFOH410",
+      name: "Techniques of artificial intelligence",
+      location: "S.UB4.132",
+      // location: "distanciel",
+      teacher: "BERSINI Hugues",
+      type: "Théorie",
+      time: "h1012",
+      day: "lundi",
+      showInfo: "none",
+    },
     // {
     //   id: "INFOH503",
     //   name: "GPU/FPGA parallel programming",
