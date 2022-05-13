@@ -31,6 +31,16 @@
   margin: auto;
 }
 
+.partielBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.exam {
+  padding: 15px;
+}
+
 .day {
   --clay-background: #f76d6d;
   color: #f1f1f1;
