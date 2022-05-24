@@ -18,7 +18,7 @@ export let Exams = () => {
           Web Technologies <br />
           <ul>
             <li>Projet 1 : 13 avril (rendu)</li>
-            <li>Projet 2 : dimanche 15 mai</li>
+            <li>Projet 2 : dimanche 15 mai (rendu)</li>
             <li>Projet 3 : mercredi 08 juin</li>
             <li>Examen écrit : mardi 14 juin (16h -> 19h)</li>
           </ul>
@@ -47,7 +47,7 @@ export let Exams = () => {
           GPU/FPGA parallel programming <br />
           <ul>
             <li>Rapport de projet : mardi 07 juin</li>
-            <li>Oral : mardi 14 ou mercredi 15 juin</li>
+            <li>Oral : mercredi 15 juin (15h -> 15h30)</li>
           </ul>
         </div>
       </div>
